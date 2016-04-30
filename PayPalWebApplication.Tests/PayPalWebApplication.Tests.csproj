@@ -118,7 +118,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebApplication2\PayPalWebApplication.csproj">
+    <ProjectReference Include="..\PayPalWebApplication\PayPalWebApplication.csproj">
       <Project>{AC8140EF-D39D-40B3-8507-722D9E3F38CB}</Project>
       <Name>PayPalWebApplication</Name>
     </ProjectReference>
