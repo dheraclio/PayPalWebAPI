@@ -15,3 +15,8 @@ C# .NET WebAPI project integrated to PayPal REST API
 
 [PayPal Example of accepting payment](https://developer.paypal.com/docs/integration/web/accept-paypal-payment)
 
+http://paypal.github.io/PayPal-NET-SDK/
+
+http://paypal.github.io/PayPal-NET-SDK/Samples/PaymentWithPayPal.aspx.html
+
+https://developer.paypal.com/docs/rest/api/

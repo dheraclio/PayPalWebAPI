@@ -7,14 +7,11 @@ using PayPal.Api;
 
 namespace PayPalWebApplication.Models
 {
-    public class CreditPaymentBean
+    public abstract class PaymentBean
     {
         //Item for which you are taking payment
         public Item item { get; set; }
         
-        //Credit card         
-        public CreditCard creditCard { get; set; }
-               
         // Specify your total payment amount and assign the details object
         public Amount amount { get; set; }
 
@@ -22,6 +19,7 @@ namespace PayPalWebApplication.Models
         public String description { get; set; }
 
         //Your invoice number which you are generating"
-        public String invoice_number { get; set; }         
+        public String invoice_number { get; set; }
+        
     }
 }
