@@ -1,7 +1,14 @@
 ### PayPalWebAPI
 C# .NET WebAPI project integrated to PayPal REST API 
 
-### Running
+### Running app
+1) Create an app and credentials at [Paypal](https://developer.paypal.com/) for a sandbox test
+
+2) Insert clientId and clientSecret at [paypalSecrets.config](\PayPalWebApplication\paypalSecrets.config) value attributes
+
+3) Access http://localhost:51533 to view current example scenarios
+
+### Running tests
 1) Create an app and credentials at [Paypal](https://developer.paypal.com/) for a sandbox test
 
 2) Insert clientId and clientSecret at [paypalSecrets.config](\PayPalWebApplication\paypalSecrets.config) value attributes
@@ -15,8 +22,8 @@ C# .NET WebAPI project integrated to PayPal REST API
 
 [PayPal Example of accepting payment](https://developer.paypal.com/docs/integration/web/accept-paypal-payment)
 
-http://paypal.github.io/PayPal-NET-SDK/
+[PayPal-NET-SDK](http://paypal.github.io/PayPal-NET-SDK/)
 
-http://paypal.github.io/PayPal-NET-SDK/Samples/PaymentWithPayPal.aspx.html
+[PaymentWithPayPal](http://paypal.github.io/PayPal-NET-SDK/Samples/PaymentWithPayPal.aspx.html)
 
-https://developer.paypal.com/docs/rest/api/
+[PayPal for developers](https://developer.paypal.com/docs/rest/api/)
