@@ -48,11 +48,13 @@ namespace PayPalWebApplication.Factories
                 creditCard = new CreditCard()
                 {
                     cvv2 = "874",  //card cvv2 number
-                    expire_month = 1, //card expire date
-                    expire_year = 2020, //card expire year
-                    first_name = "Aman",
-                    last_name = "Thakur",
-                    number = "1234567890123456", //enter your credit card number here
+                    expire_month = 01, //card expire date //mm
+                    expire_year = 20, //card expire year  //yy
+                    first_name = "John",
+                    last_name = "Doe",
+                    //Samples CC numbers at http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm
+                    //Visa credit card
+                    number = "4012888888881881", //enter your credit card number here
                     type = "visa", //credit card type here paypal allows 4 types
 
                     billing_address = new Address()

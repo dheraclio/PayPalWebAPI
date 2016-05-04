@@ -168,7 +168,7 @@ namespace PayPalWebApplication.Controllers
                 //if the createdPayment.state is "approved" it means the payment was successful else not
                 if (resultPayment.state.ToLower() != "approved")
                 {
-                    return View("FailureView");
+                    return View("FailureView: payment: "+ resultPayment.ConvertToJson());
                 }
 
                 return View("SuccessView");
@@ -176,7 +176,7 @@ namespace PayPalWebApplication.Controllers
             catch (PayPal.PayPalException ex)
             {
                 logger.Debug("Error: " + ex.Message, ex);
-                return View("FailureView", ex);
+                return View("FailureView: "+ex.ToString());
             }
         }
     }

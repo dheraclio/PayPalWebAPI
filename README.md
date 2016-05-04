@@ -27,3 +27,5 @@ C# .NET WebAPI project integrated to PayPal REST API
 [PaymentWithPayPal](http://paypal.github.io/PayPal-NET-SDK/Samples/PaymentWithPayPal.aspx.html)
 
 [PayPal for developers](https://developer.paypal.com/docs/rest/api/)
+
+[PayPal fake Credit card numbers for tests](http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm)
