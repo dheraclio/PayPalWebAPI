@@ -176,7 +176,14 @@ namespace PayPalWebApplication.Controllers
             catch (PayPal.PayPalException ex)
             {
                 logger.Debug("Error: " + ex.Message, ex);
-                return View("FailureView: "+ex.ToString());
+                if (ex is PayPal.ConnectionException)
+                {
+                    return View("FailureView: " + ((PayPal.ConnectionException)ex).Response);
+                }
+                else
+                {
+                    return View("FailureView: " + ex);
+                }                
             }
         }
     }

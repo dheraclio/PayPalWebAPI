@@ -49,7 +49,7 @@ namespace PayPalWebApplication.Factories
                 {
                     cvv2 = "874",  //card cvv2 number
                     expire_month = 01, //card expire date //mm
-                    expire_year = 20, //card expire year  //yy
+                    expire_year = 2020, //card expire year  //yy
                     first_name = "John",
                     last_name = "Doe",
                     //Samples CC numbers at http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm
@@ -70,7 +70,9 @@ namespace PayPalWebApplication.Factories
         }
 
         /// <summary>
-        /// 
+        /// Creates sample paypal payment
+        /// Paypal requires currency to match user account.
+        /// For currency codes see https://developer.paypal.com/docs/classic/api/currency_codes/
         /// </summary>
         /// <returns></returns>
         public static PayPalPaymentBean createSamplePayPalPayment(string guid, string redirectUrl)
@@ -84,7 +86,7 @@ namespace PayPalWebApplication.Factories
                 // similar as we did for credit card, do here and create amount object
                 amount = new Amount()
                 {
-                    currency = "USD",
+                    currency = "BRL",
                     total = "7", // Total must be equal to sum of shipping, tax and subtotal.
 
                     // similar as we did for credit card, do here and create details object
@@ -99,7 +101,7 @@ namespace PayPalWebApplication.Factories
                 item = new Item()
                 {
                     name = "Item Name",
-                    currency = "USD",
+                    currency = "BRL",
                     price = "5",
                     quantity = "1",
                     sku = "sku"
